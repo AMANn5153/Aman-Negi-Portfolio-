@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.about{
+  margin: 50px; 
+  height:100vh;
+  max-height:100vh;
+  /* width:100%;*/
+  padding:5px;
+}
+.Addtionals{
+  margin-top: 40px;
+  padding:40px;
+  height:auto;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:space-evenly;
+  gap:40px;
+}
+.project{
+  padding: 40px;
+  height:auto;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:space-evenly;
+  gap:40px;
+}
+.skills{
+  padding: 40px;
+  height:100%;
+  max-height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:space-evenly;
+  gap:40px;
+  border:1xp solid white;
+
+}
+.skills-topic{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:space-evenly;
+
+}
+.head:hover{
+  color:white;
+}
+
+
+.resume:hover {
+  color:#19dcf5;
+  cursor: pointer;
+}
+
+.skills-icons{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  gap:12px;
+}
+
+.resume{
+  text-decoration:none;
+  color:#909098;
+  font-size:16px;
+}
+
+.resume:hover  .zoom{
+  transform: scale(1.3);
+}
+
+
+

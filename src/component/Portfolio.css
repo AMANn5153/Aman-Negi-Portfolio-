@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.portfolio-container{
+  height: 100vh;
+  max-height : 100vh;
+  max-height:100vh;
+  background : #000005;
+  color: #1e3d7b;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+  border:1px solid white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  overflow:hidden; 
+}
+
+
+#light {
+  height: 800px;
+  width: 800px;
+  border-radius: 50% ;
+  z-index:30;  
+  background: radial-gradient(500px at 50% 50%, rgba(29, 78, 216, 0.25), transparent 80%);
+  position: fixed;
+  pointer-events: none; 
+  transition: background-color 0.3s ease; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.content{
+  margin:50px;
+  height:100%;
+  max-height:100vh;
+  width:100 %;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position:relevant;
+}
+
+.Intro{  
+  margin:50px;
+  height:100%;
+  max-height:100vh;
+  grid-column:1/2;
+  display:grid;
+  grid-template-rows: 1fr 2fr ;
+  color: white;
+}
+.welcome{
+  height:50%;
+  padding:10px;
+  grid-row: 1/2;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:center;
+}
+.nav{
+  padding-top:20px;
+  grid-rows:2/3;
+  height:70%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+.social{
+  height:10%;
+  margin-top:20px;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:space-evenly;
+  color:#505177;
+}
+.icons{
+  display:flex;
+  justify-content:center;
+}
+.icons:hover{
+  color:white;
+  transform:scale(1.2);
+  cursor:pointer
+}
+
+.sections {
+  grid-column:2/3;
+  height: 100%;
+  max-height: 100vh;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+}
+.section{
+  height: 100%;
+  max-height:100vh;
+  width:100%;
+  color:#909098;
+  overflow:auto;
+  padding-bottom:70px;
+}
+/* Hide scrollbar */
+.section::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+
+.Load{
+  width:100vw;
+  height:100vh;
+  background: #000000;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+
+
+
+
+
+
+

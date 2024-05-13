@@ -1,0 +1,27 @@
+.nav-sec{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction:row;
+  height:10px;
+  width:50px;
+  padding: 10px;
+  transition: width 2s  ease-in-out;
+  color:#909098
+
+}
+.nav-sec:hover {
+  transform: scale(1.1);
+  cursor:pointer;
+  width:120px;
+  border-bottom : 2px solid white ;
+  color:white;
+}
+ p{
+   font-size:15px;
+ }
+.active{
+  color:white;
+  transform: scale(1.1);
+}
+
