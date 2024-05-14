@@ -78,4 +78,8 @@
   transform:scale(1.1);
 }
 
-
+@media only screen and (max-width:768px) {
+ .resume{
+  color:#19dcf5;
+ }
+}

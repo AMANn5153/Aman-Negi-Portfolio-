@@ -8,6 +8,10 @@ import About  from './section/About.jsx';
 import Project  from './section/Project.jsx';
 import Skills  from './section/Skills.jsx';
 import Addtionals  from './section/Addtionals.jsx';
+import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
+
+
+
 
 
 import Darray from './Darray.js';
@@ -17,6 +21,8 @@ const Portfolio = () => {
 
   const [section, setSection] = useState("");
   const [activeSection, setActiveSection] = useState("");
+  const [activeDown, setDown] = useState("up");
+
 
 
   const projectRef = useRef(null);
@@ -25,6 +31,23 @@ const Portfolio = () => {
   const aboutRef = useRef(null);
 
 
+
+  const handleDown=(e)=>{
+    if(activeDown === "up"){
+      setDown("down");
+      const sec = document.getElementById('section');
+      const intro = document.getElementById('intro');
+      sec.style.zIndex='1'
+      intro.style.zIndex='-1'
+    }
+    else{
+      setDown("up");
+      const sec = document.getElementById('section');
+      const intro = document.getElementById('intro');
+      sec.style.zIndex='-1'
+      intro.style.zIndex='1'
+    }
+  }
 
   const changeSection = (e) => {
     setSection(e.target.innerText);
@@ -51,9 +74,9 @@ const Portfolio = () => {
   const sec = document.getElementById(section);
   useEffect(() => {
     const observerOptions = {
-      root: sec,
+      root: null,
       rootMargin: '0px',
-      threshold: 0.5// Intersection ratio when the callback is invoked
+      threshold: 0.3// Intersection ratio when the callback is invoked
     };
 
     const observerCallback = (entries, observer) => {
@@ -107,9 +130,10 @@ const Portfolio = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
+        style={{width:"100%"}}
       > 
           <div className="content">
-            <div className="Intro">
+            <div id="intro" className="Intro">
               <div className ="Welcome">
                 <h1 className="display-2 fw-bold">Aman Negi</h1>
                   <h6 className="display-7 fw-bold">Fullstack Developer</h6>
@@ -128,16 +152,18 @@ const Portfolio = () => {
                   <div className="icons" onClick={openGitHub}><TiSocialGithub /></div>
                   <div className="icons" onClick={openEmail}><AiFillGoogleCircle /></div>
               </div>
+              <div className="down" onClick={handleDown}><FaAngleDoubleDown /></div>
           </div>
+       
           </div>
             <div id = "section"  className="sections">
+            <div className="head-section"><h2>{activeSection}</h2> </div>
               <div className="section">
                <div id="About" ref={aboutRef}> <About/></div>
                 <div ref={projectRef} id="Projects"> <Project /></div>
                 <div ref={addtionalRef} id="Additional"><Addtionals/></div>
                <div ref={skillsRef} id="Skills"><Skills/></div> 
-
-
+               <div className="down" onClick={handleDown}><FaAngleDoubleUp /></div>
               </div>
             </div>
           </div>
