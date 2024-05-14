@@ -52,12 +52,6 @@
   color:white;
 }
 
-
-.resume:hover {
-  color:#19dcf5;
-  cursor: pointer;
-}
-
 .skills-icons{
   display:flex;
   flex-direction:row;
@@ -68,12 +62,20 @@
 .resume{
   text-decoration:none;
   color:#909098;
-  font-size:16px;
+  font-size:20px;
 }
 
-.resume:hover  .zoom{
-  transform: scale(1.3);
+.resume:hover{
+  text-decoration:none;
+  color:#19dcf5;
 }
 
+.arrow{
+  color:#909098;
+}
+
+.arrow:hover{
+  transform:scale(1.1);
+}
 
 

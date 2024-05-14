@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .portfolio-container{
-  height: 100vh;
+  height: 100%;
   max-height:100vh;
   width:100%;
   background : #000005;
@@ -10,7 +10,7 @@
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  overflow:hidden; 
+  overflow:hidden;
 }
 
 
@@ -121,20 +121,41 @@
 
 
 
-/* @media screen and (max-width: 768px) {
+ @media only screen and (max-width: 468px) {
   .portfolio-container{
-    height:100vh;
-    width:auto;
+    height:auto;
+    width:100vw;
+    margin:0px;
     background : #01012c;
     overflow: scroll;
-    border:1px solid white;
   }
   .content {
+    grid-template-columns: 1fr; /* Change grid to one column */
+    grid-template-rows: 1fr 1fr; /* Change grid to auto rows */
+    height: 100%;
+    width:100vw;
+    border: 1px solid aliceblue;
+  }
+
+  .Intro {
+    grid-row: 1/2;
+    grid-column: 1/2; /* Span the full width */
+    width:100vw;
+    height:50%;
+  }
+
+  .sections {
+    grid-row: 2/3;
+    grid-column: 1/2; /* Span the full width */
+    width:100vw;
+    height:50%;
+  }
+  /* .content {
     grid-template-rows: 1fr 2fr; 
     margin: 5px;
     height:50%;
     border:2px solid red;
-  }
+  } */
   .welcome{
     height:100%;
     width: 100%;
@@ -144,24 +165,23 @@
     justify-content: space-around;
     align-items:center;
   }
-  .Intro{
+  /* .Intro{
     height: 50%;
     grid-row:1/2;
     border:1px solid white;
-  }
-  .sections{
+  } */
+  /* .sections{
     grid-row:2/3;
     height:50vh;
     border:1px solid white;
     margin:50px;
-  }
+  } */
 
   .nav {
-    border: 1px solid white;
-
+    display: none;
   }
 
   #light{
     display: none;
   }
-} */
+} 
