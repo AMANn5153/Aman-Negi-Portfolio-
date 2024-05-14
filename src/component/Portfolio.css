@@ -130,12 +130,12 @@
     border:1px solid white;
   }
   .content {
-    grid-template-rows: 1fr 2fr; /* Switch to single column layout */
+    grid-template-rows: 1fr 2fr; 
     margin: 5px;
     height:50%;
     border:2px solid red;
-  /* } */
-  /* .welcome{
+  }
+  .welcome{
     height:100%;
     width: 100%;
     padding:10px;
@@ -163,5 +163,5 @@
 
   #light{
     display: none;
-  } */
+  }
 } */
