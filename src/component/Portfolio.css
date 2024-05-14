@@ -2,13 +2,12 @@
 
 .portfolio-container{
   height: 100vh;
-  max-height : 100vh;
   max-height:100vh;
+  width:100%;
   background : #000005;
   color: #1e3d7b;
   font-size: 2rem;
   transition: background-color 0.3s ease;
-  border:1px solid white;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   overflow:hidden; 
@@ -31,7 +30,7 @@
   margin:50px;
   height:100%;
   max-height:100vh;
-  width:100 %;
+  width:100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position:relevant;
@@ -57,7 +56,7 @@
 }
 .nav{
   padding-top:20px;
-  grid-rows:2/3;
+  grid-row:2/3;
   height:70%;
   display:flex;
   flex-direction:column;
@@ -122,3 +121,47 @@
 
 
 
+/* @media screen and (max-width: 768px) {
+  .portfolio-container{
+    height:100vh;
+    width:auto;
+    background : #01012c;
+    overflow: scroll;
+    border:1px solid white;
+  }
+  .content {
+    grid-template-rows: 1fr 2fr; /* Switch to single column layout */
+    margin: 5px;
+    height:50%;
+    border:2px solid red;
+  /* } */
+  /* .welcome{
+    height:100%;
+    width: 100%;
+    padding:10px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+  }
+  .Intro{
+    height: 50%;
+    grid-row:1/2;
+    border:1px solid white;
+  }
+  .sections{
+    grid-row:2/3;
+    height:50vh;
+    border:1px solid white;
+    margin:50px;
+  }
+
+  .nav {
+    border: 1px solid white;
+
+  }
+
+  #light{
+    display: none;
+  } */
+} */
