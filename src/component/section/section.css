@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .about{
-  margin: 50px; 
   height:100vh;
   max-height:100vh;
-  /* width:100%;*/
+  width:100%;
   padding:5px;
 }
 .Addtionals{
@@ -38,7 +37,6 @@
   align-items: center;
   justify-content:space-evenly;
   gap:40px;
-  border:1xp solid white;
 
 }
 .skills-topic{
@@ -81,5 +79,11 @@
 @media only screen and (max-width:768px) {
  .resume{
   color:#19dcf5;
+ }
+
+ .about{
+  display: flex;
+  flex-wrap: wrap;
+  padding:15px;
  }
 }

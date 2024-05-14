@@ -135,9 +135,9 @@ const Portfolio = () => {
           <div className="content">
             <div id="intro" className="Intro">
               <div className ="Welcome">
-                <h1 className="display-2 fw-bold">Aman Negi</h1>
-                  <h6 className="display-7 fw-bold">Fullstack Developer</h6>
-                  <p className="fs-7">I create Elegant digital places for better experience. </p>
+                <div><h1 className=" display-2 fw-bold">Aman Negi</h1></div>
+                <div><h6 className=" display-7 fw-bold">Fullstack Developer</h6></div>
+                <div><p className=" fs-7">I create Elegant digital places for better experience. </p></div>
               </div>
             <div className="nav">
                 {Darray.map((item) => (
@@ -163,9 +163,10 @@ const Portfolio = () => {
                 <div ref={projectRef} id="Projects"> <Project /></div>
                 <div ref={addtionalRef} id="Additional"><Addtionals/></div>
                <div ref={skillsRef} id="Skills"><Skills/></div> 
-               <div className="down" onClick={handleDown}><FaAngleDoubleUp /></div>
               </div>
+              <div className="down" onClick={handleDown}><FaAngleDoubleUp /></div>
             </div>
+            
           </div>
       </motion.div>
     </div>

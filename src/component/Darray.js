@@ -61,7 +61,7 @@ const project =[
     key:3,
     head: "Aman Negi",
     des:"A portfolio website using react js .",
-    link:"",
+    link:"https://aman-negi.onrender.com",
     pic:aman
   }
 ]
