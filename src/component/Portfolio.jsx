@@ -164,7 +164,6 @@ const Portfolio = () => {
                 <div ref={addtionalRef} id="Additional"><Addtionals/></div>
                <div ref={skillsRef} id="Skills"><Skills/></div> 
                <div className="down" onClick={handleDown}><FaAngleDoubleUp /></div>
-
               </div>
             </div>
             
