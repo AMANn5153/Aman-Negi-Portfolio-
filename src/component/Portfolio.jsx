@@ -157,14 +157,15 @@ const Portfolio = () => {
        
           </div>
             <div id = "section"  className="sections">
-            <div className="head-section"><h2>{activeSection}</h2> </div>
               <div className="section">
+              <div className="head-section"><h2>{activeSection}</h2> </div>
                <div id="About" ref={aboutRef}> <About/></div>
                 <div ref={projectRef} id="Projects"> <Project /></div>
                 <div ref={addtionalRef} id="Additional"><Addtionals/></div>
                <div ref={skillsRef} id="Skills"><Skills/></div> 
+               <div className="down" onClick={handleDown}><FaAngleDoubleUp /></div>
+
               </div>
-              <div className="down" onClick={handleDown}><FaAngleDoubleUp /></div>
             </div>
             
           </div>
