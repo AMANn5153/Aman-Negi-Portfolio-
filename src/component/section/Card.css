@@ -58,13 +58,15 @@
 @media screen and (max-width:768px) {
 
 .card-sec{
-  box-shadow: 0px 0px 10px #1e3d7b;
   height:auto;
   width:95%;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
   border-radius: 8px; 
+  }
+  .image-container{
+    box-shadow: 0px 0px 10px #1e3d7b;
   }
 }
 
