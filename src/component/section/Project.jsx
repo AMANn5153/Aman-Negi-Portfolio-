@@ -18,7 +18,7 @@ export default function Project() {
         />
       ))}
       <div >
-        <a className="resume" href="https://drive.google.com/file/d/1VXQdBFRq2IvX0K1kOp5X7YFuWaHoNgkb/view?usp=sharing" target='_blank' >View Full Resume
+        <a className="resume" href="https://drive.google.com/file/d/1sbzb5mLa6kMM_kiVs8gaexYR4QLK_gEp/view?usp=drive_link" target='_blank' >View Full Resume
         &nbsp; <MdArrowOutward className= "zoom" size={20}/>
         </a>
       </div>
