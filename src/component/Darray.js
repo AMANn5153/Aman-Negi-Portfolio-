@@ -63,6 +63,13 @@ const project =[
     des:"A portfolio website using react js .",
     link:"https://aman-negi.onrender.com",
     pic:aman
+  },
+  {
+    key:4,
+    head: "Swirl",
+    des :" Swirl is chatting up more to come in future",
+    link:"",
+    pic:""
   }
 ]
 
@@ -77,7 +84,7 @@ const certification=[
   {
     key:2,
     head:" Internshala training for Data Science",
-    des: "Learned basics of python, Data Exploration, Data-Preprocessing, Learned Supervised and Unsupervised Learining",
+    des: "Learned basics of python, Data Exploration, Data-Preprocessing, Learned Supervised and Unsupervised Learning",
     link:"https://trainings.internshala.com/view_certificate/1hxhv38rer0/g6tkp0zadpc/",
     pic:cert
   } ,
