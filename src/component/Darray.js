@@ -17,6 +17,8 @@ import leetcode from './files/leetcode.JPG'
 import aman  from './files/aman.JPG';
 import shorts from './files/shorts.jpg';
 import Ask from './files/Ask.JPG'
+import swirl from './files/swirl.JPG'
+
 
 
 const Darray =[
@@ -69,7 +71,7 @@ const project =[
     head: "Swirl",
     des :" Swirl is chatting up more to come in future",
     link:"",
-    pic:""
+    pic:swirl
   }
 ]
 
