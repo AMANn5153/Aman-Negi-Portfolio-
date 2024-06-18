@@ -101,7 +101,7 @@ const certification=[
   {
     key:4,
     head:"LeetCode",
-    des: " Solved More than 550+ questions on LeetCode. highest contest rating 1499. ",
+    des: " Solved More than 600+ questions on LeetCode. highest contest rating 1499. ",
     link:"https://leetcode.com/u/amann5153/", 
     pic:leetcode
   }
