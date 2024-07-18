@@ -69,8 +69,8 @@ const project =[
   {
     key:4,
     head: "Swirl",
-    des :" Swirl is chatting up more to come in future",
-    link:"",
+    des :" Swirl is chatting app using build using mern stack and socket.io still working on cool stuff",
+    link:"https://swirl-1ms3.onrender.com",
     pic:swirl
   }
 ]
